@@ -1,0 +1,8 @@
+npm install react-router-dom@6 
+npm install react-boostrap bootstrap 
+npm install axios
+npm install react-cookie
+npm install --save moment react-moment
+npm install --save-exact react-paginate@8.1.2
+npm install react-router-dom
+npm install @paypal/react-paypal-js
