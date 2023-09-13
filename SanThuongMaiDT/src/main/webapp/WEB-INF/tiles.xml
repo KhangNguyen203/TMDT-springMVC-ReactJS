@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        
+        <put-attribute name="content" value="" />
+        
+<!--        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />-->
+    </definition>
+    
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    
+    <definition name="products" extends="baseLayout">
+        <put-attribute name="title" value="Quản trị sản phẩm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/products.jsp" />
+    </definition>
+    <definition name="add-products" extends="baseLayout">
+        <put-attribute name="title" value="Xác nhận cửa hàng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/add-products.jsp" />
+    </definition>
+    <definition name="store" extends="baseLayout">
+        <put-attribute name="title" value="Cửa hàng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/store.jsp" />
+    </definition>
+    
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/login.jsp" />
+    </definition>
+    
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Đăng ký" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/register.jsp" />
+    </definition>
+    
+    <definition name="register-store" extends="baseLayout">
+        <put-attribute name="title" value="Đăng ký cửa hàng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/register-store.jsp" />
+    </definition>
+    
+    <definition name="staff" extends="baseLayout">
+        <put-attribute name="title" value="Xác nhận cửa hàng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/staff.jsp" />
+    </definition>
+    
+    <definition name="confirm" extends="baseLayout">
+        <put-attribute name="title" value="Xác nhận cửa hàng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/confirm.jsp" />
+    </definition>
+    
+    <definition name="categories" extends="baseLayout">
+        <put-attribute name="title" value="Quản lí thể loại" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/categories.jsp" />
+    </definition>
+    
+    <definition name="add-categories" extends="baseLayout">
+        <put-attribute name="title" value="Thêm thể loại" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/add-categories.jsp" />
+    </definition>
+    <definition name="users" extends="baseLayout">
+        <put-attribute name="title" value="Quản lí người dùng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/users.jsp" />
+    </definition>
+    
+    <definition name="info-store" extends="baseLayout">
+        <put-attribute name="title" value="Quản lí thông tin cửa hàng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/info-store.jsp" />
+    </definition>
+    
+    <definition name="stats-product" extends="baseLayout">
+        <put-attribute name="title" value="Thông kê theo sản phẩm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/stats-product.jsp" />
+    </definition>
+    
+    <definition name="stats-categories" extends="baseLayout">
+        <put-attribute name="title" value="Thông kê theo thể loại" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/stats-categories.jsp" />
+    </definition>
+    
+    <definition name="stats-admin" extends="baseLayout">
+        <put-attribute name="title" value="Thông kê theo thể loại" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/stats-admin.jsp" />
+    </definition>
+</tiles-definitions>
